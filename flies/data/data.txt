@@ -78,7 +78,7 @@
                                 <i class="comment">//error</i></p>  
                         </div>
                         <div class="code__item">
-                            <p class="code__n">2</p>
+                            <p class="code__n">3</p>
                             <p class="code__par">
                                 <i class="num">console</i><i class="comma">.</i><i class="equal">log</i>
                                 <i class="comma">(
@@ -87,7 +87,7 @@
                                 <i class="comma">;</i></p>  
                         </div>
                         <div class="code__item">
-                            <p class="code__n">3</p>
+                            <p class="code__n">4</p>
                             <p class="code__par"></p>
                         </div>
                     </div>    
