@@ -49,7 +49,7 @@ let request = (url) => {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    request( document.cookie || 'https://raw.githubusercontent.com/AllIsCake/Learn-JavaScript-/master/flies/forBegining/intro.txt');
+    request( document.cookie || 'https://raw.githubusercontent.com/AllIsCake/learnJS/master/flies/forBegining/intro.txt');
 });
 
 
