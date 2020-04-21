@@ -51,7 +51,7 @@ var request = function request(url) {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-    request(document.cookie || 'https://raw.githubusercontent.com/AllIsCake/Learn-JavaScript-/master/flies/forBegining/intro.txt');
+    request(document.cookie || 'https://raw.githubusercontent.com/AllIsCake/learnJS/master/flies/forBegining/intro.txt');
 });
 
 var fetchButtons = document.querySelectorAll('.menu__links-item');
