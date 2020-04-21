@@ -1,0 +1,202 @@
+﻿                <h1 class="main__title">Условные операторы</h1>
+                <p class="main__par">Часто нужно что-то сделать, в зависимости от условий.
+                     Поэтому и придумали условные операторы. Условные оператор задается ключевым словом 
+                     if, затем в () указывается условие, которое может выдавать true или false. 
+                     (Любое число кроме 0 и любая строка будет выдавать значение true, все остальное, 
+                     в том числе null и undefined будет false)</p>
+                     <div class="codezone">
+                        <div class="code__item">
+                            <p class="code__n">1</p>
+                            <p class="code__par"></p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">2</p>
+                            <p class="code__par">
+                                <i class="let">if</i> 
+                                <i class="comma">(<i class="num">1</i>)</i> {</p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">3</p>
+                            <p class="code__par"><i class="comment comm--m">//выполнится</i></p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">4</p>
+                            <p class="code__par">}</p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">5</p>
+                            <p class="code__par"></p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">6</p>
+                            <p class="code__par">
+                                <i class="let">if</i> 
+                                <i class="comma">(<i class="num">false</i>)</i> {</p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">7</p>
+                            <p class="code__par"><i class="comment comm--m">//не выполнится</i></p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">8</p>
+                            <p class="code__par">}</p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">9</p>
+                            <p class="code__par"></p>
+                        </div>
+                    </div>
+                <h1 class="main__title">Виды операторов сравнения:</h1>
+                <ol class="main__list">
+                    <li class="main__list-item"><code class="code code--l">></code> - очевидно оператор больше</li>
+                    <li class="main__list-item"><code class="code code--l"><</code>- оператор меньше</li>
+                    <li class="main__list-item"><code class="code code--l">==</code> - оператор нестрогого равенства</li>
+                    <li class="main__list-item"><code class="code code--l">===</code> - оператор строгого равенства</li>
+                </ol>
+                <h1 class="main__title">Важные функци</h1>
+                <p class="main__par">Согласитесь, не всегда удобно использовать <code class="code code--l">console.log()</code>  функцию. 
+                    Для пользователя это крайне неудобно! Для взаимодействия с пользователем применяются 
+                    другие функции (сейчас не обязательно знать как работают функции, важно понимать, что 
+                    они делают)! </p>
+                <ol class="main__list">
+                    <li class="main__list-item"><code class="code code--l">alert('ваш текст')</code> –
+                         функция вызывает оповещительное окно в браузере с вашим текстом </li>
+                    <li class="main__list-item"><code class="code code--l">let your_var = 
+                        prompt('ваш текст')</code> – браузер показывает тоже оповещительное окно, 
+                        но в этот раз там еще есть поле для ввода. Информация, введенная в него, 
+                        записывается в вашу переменную, к которой вы присвоили эту функцию.</li>
+                </ol>
+                <p class="main__par">Как использовать данные функции, будет показано на примере ниже</p>
+                <p class="main__par">Чем же отличается строгое равенство от нестрогого? 5 == ‘5’
+                    при не строгом будет значение true, а при строгом будет false. При нестрогом 
+                    неравенстве JS преобразует строку в число, а при строгом компилятор железно 
+                    сравнивает два аргумента и никаких манипуляций с ним не осуществляет.</p>
+                    <div class="codezone">
+                        <div class="code__item">
+                            <p class="code__n">1</p>
+                            <p class="code__par"></p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">2</p>
+                            <p class="code__par">
+                                <i class="let">if</i> 
+                                <i class="comma">(<i class="num">5</i>
+                                <i class="equal">==</i>
+                                <i class="str">'5'</i> )</i> {</p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">3</p>
+                            <p class="code__par"><i class="comment comm--m">//выполнится</i></p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">4</p>
+                            <p class="code__par">}</p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">5</p>
+                            <p class="code__par"></p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">6</p>
+                            <p class="code__par">
+                                <i class="let">if</i> 
+                                <i class="comma">(<i class="num">5</i>
+                                <i class="equal">===</i>
+                                <i class="str">'5'</i> )</i> {</p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">7</p>
+                            <p class="code__par"><i class="comment comm--m">//не выполнится</i></p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">8</p>
+                            <p class="code__par">}</p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">9</p>
+                            <p class="code__par"></p>
+                        </div>
+                    </div>
+                <h1 class="main__title">Else/Else if</h1>
+                <p class="main__par">Часто приходится проходить через несколько условий, 
+                    для этого существует специальный оператор else или else if.</p>
+                    <div class="codezone">
+                        <div class="code__item">
+                            <p class="code__n">1</p>
+                            <p class="code__par"></p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">2</p>
+                            <p class="code__par">
+                                <i class="let">let </i> 
+                                <i class="var">year</i>
+                                <i class="equal">=</i>
+                                <i class="equal">prompt</i><i class="commma">(<i class="str">"Когда родился И. Ньютон?"</i>)</i>
+                                <i class="commа">;</i>
+                            </p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">3</p>
+                            <p class="code__par"></p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">4</p>
+                            <p class="code__par">
+                                <i class="let">if</i> 
+                                <i class="comma">(<i class="var">year</i>
+                                <i class="equal">></i>
+                                <i class="num">1643</i> )</i> {</p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">5</p>
+                            <p class="code__par"><i class="equal comm--m">alert<i class="comma">(
+                                <i class="str">"Многовато!"</i>
+                                )</i></i></p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">6</p>
+                            <p class="code__par">} <i class="let">else if </i>(<i class="var">year</i>
+                                <i class="equal"><</i>
+                                <i class="num">1643</i>) {</p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">7</p>
+                            <p class="code__par">
+                                <i class="equal comm--m">alert</i>(<i class="str">"Маловато!"</i>);
+                            </p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">8</p>
+                            <p class="code__par">
+                                } <i class="let">else</i> {
+                            </p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">9</p>
+                            <p class="code__par">
+                               <i class="equal comm--m">alert</i>(<i class="str">'Верно!'</i>);
+                            </p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">10</p>
+                            <p class="code__par">}</p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">11</p>
+                            <p class="code__par"></p>
+                        </div>
+                    </div>
+                <p class="main__par">Теперь я сделаю небольшую <a href="https://plnkr.co/edit/MaCOGUCAJccf7Gnj" class="cond__link">программу</a> , которая 
+                    вычисляет индекс массы тела человека и в зависимости от результата, выводит ему ответ.</p>
+                <div class="task__wrapper">
+                    <h1 class="task__title">Задачи:</h1>
+                    <article class="tasks">
+                        <div class="task__item">
+                            <h2 class="task__name">Задача #1</h2>
+                            <p class="task__desc">Создайте переменную t(температура) и в зависомости от значения
+                                скажите, можно ли сегодня гулять или лучше посидеть дома!
+                            </p>
+                            <a href="https://embed.plnkr.co/plunk/J6AWN6XybFaMORXc" class="task__link">Решение</a>
+                        </div>
+                    </article>
+                </div>

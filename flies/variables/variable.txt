@@ -1,0 +1,203 @@
+﻿                <h1 class="main__title">Переменные</h1>
+                <p class="main__par">Пожалуй, это самая основная часть любого языка программирования. 
+                    Ведь нам нужно же где-нибудь хранить данные, не так ли? Регистрация нового пользователя,
+                     добавление товаров в корзину, простые анимации. Везде используются переменные.</p>
+                <p class="main__par">Переменная - это определенная ячейка памяти вашего компьютера, 
+                    где он хранит какую-либо полезную информацию.</p>
+                <p class="main__par">Переменная в JS задается ключевым словом let, после идет название переменной. 
+                    Давайте создадим две переменные с именем и возвратом человека.</p>
+                <div class="codezone">
+                    <div class="code__item">
+                        <p class="code__n">1</p>
+                        <p class="code__par"></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">2</p>
+                        <p class="code__par">
+                            <i class="let">let</i> 
+                            <i class="var">user</i> 
+                            <i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">3</p>
+                        <p class="code__par">
+                        <i class="let">let</i> 
+                            <i class="var">age</i>
+                            <i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">4</p>
+                        <p class="code__par"></p>
+                    </div>
+                </div>
+                <p class="main__par">Теперь можно присвоить им значение:</p>
+                <div class="codezone">
+                    <div class="code__item">
+                        <p class="code__n">1</p>
+                        <p class="code__par"></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">2</p>
+                        <p class="code__par">
+                            <i class="var">user</i> 
+                            <i class="equal">=</i> 
+                            <i class="str">"Marry"</i><i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">3</p>
+                        <p class="code__par">
+                            <i class="var">age</i> 
+                            <i class="equal">=</i> 
+                            <i class="num">24</i><i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">4</p>
+                        <p class="code__par"></p>
+                    </div>
+                </div>
+                <p class="main__par">Мы можем объявлять несколько переменных подряд. 
+                    И давайте уже выведем это все в консоль за одно:</p>
+                    <div class="codezone">
+                        <div class="code__item">
+                            <p class="code__n">1</p>
+                            <p class="code__par"></p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">2</p>
+                            <p class="code__par">
+                                <i class="let">let</i> 
+                                <i class="var">user</i> 
+                                <i class="equal">=</i> 
+                                <i class="str">"Marry"</i><i class="comma">,</i>
+                                <i class="var">age</i> 
+                                <i class="equal">=</i> 
+                                <i class="num">24</i><i class="comma">;</i>
+                            </p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">3</p>
+                            <p class="code__par">
+                                <i class="num">console</i><i class="comma">.</i><i class="equal">log</i>
+                                <i class="comma">(
+                                <i class="var">user
+                                <i class="comma"> + <i class="str">' '</i> + </i>age</i> 
+                                )</i> 
+                                <i class="comma">;</i></p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">4</p>
+                            <p class="code__par"></p>
+                        </div>
+                    </div>
+                <p class="main__par">Так же можно постоянно изменять значение переменной:</p>
+                <div class="codezone">
+                    <div class="code__item">
+                        <p class="code__n">1</p>
+                        <p class="code__par"></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">2</p>
+                        <p class="code__par">
+                            <i class="let">let</i> 
+                            <i class="var">user</i> 
+                            <i class="equal">=</i>
+                            <i class="str">'Marry'</i>
+                            <i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">3</p>
+                        <p class="code__par">
+                            <i class="let">let</i> 
+                            <i class="var">age</i>
+                            <i class="equal">=</i>
+                            <i class="num">24</i>
+                            <i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">4</p>
+                        <p class="code__par"></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">5</p>
+                        <p class="code__par">
+                            <i class="var">user</i> 
+                            <i class="equal">=</i>
+                            <i class="str">'Leonardo'</i>
+                            <i class="comma">;</i></p>
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">6</p>
+                        <p class="code__par">
+                            <i class="var">age</i>
+                            <i class="equal">=</i>
+                            <i class="num">29</i>
+                            <i class="comma">;</i></p>
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">7</p>
+                        <p class="code__par"></p>
+                    </div>
+                </div>
+                <h1 class="main__title">Примеры из жизни </h1>
+                <p class="main__par">Мы можем представить работу переменных на аналогии из жизни.  
+                    На примере ящиков. Мы кладем в ящик что-то и 
+                    как только нам это нужно, мы тут же достаем это и используем, так же и с переменными.</p>
+                <img src="img/variables/var.png" 
+                    class="main__img"
+                    alt="code">   
+                <h1 class="main__title">Названия переменных</h1>
+                <ol class="main__list">
+                    <li class="main__list-item">Названия могут начинаться с букв латинского алфавита и символов $ и _</li>
+                    <li class="main__list-item">Названия не могут начинаться с числа</li>
+                </ol>
+                <p class="main__par">Вот примеры правильных названий:</p>
+                <div class="codezone">
+                    <div class="code__item">
+                        <p class="code__n">1</p>
+                        <p class="code__par"></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">2</p>
+                        <p class="code__par">
+                            <i class="let">let</i>
+                            <i class="var">_</i> 
+                            <i class="equal">=</i> 
+                            <i class="num">4</i><i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">3</p>
+                        <p class="code__par">
+                            <i class="let">let</i>
+                            <i class="var">$</i> 
+                            <i class="equal">=</i> 
+                            <i class="num">5</i><i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">4</p>
+                        <p class="code__par">
+                            <i class="num">console</i><i class="comma">.</i><i class="equal">log</i>
+                            <i class="comma">(
+                            <i class="var">_
+                            <i class="comma"> + <i class="str">' '</i> + </i>$</i> 
+                            )</i> 
+                            <i class="comma">;</i> 
+                            <i class="comment">//9</i>
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">5</p>
+                        <p class="code__par"></p>
+                    </div>
+                </div>
+                <div class="task__wrapper">
+                    <h1 class="task__title">Задачи:</h1>
+                    <article class="tasks">
+                        <div class="task__item">
+                            <h2 class="task__name">Задача #1</h2>
+                            <p class="task__desc">Поменяйте значения переменных местами</p>
+                            <a href="https://embed.plnkr.co/plunk/Q8aWmGWDRDF6h7WP" class="task__link">Решение</a>
+                        </div>
+                    </article>
+                </div>

@@ -1,0 +1,356 @@
+﻿ <h1 class="main__title">Циклы</h1>
+                <p class="main__par">В JavaScript существует несколько видов циклов, 
+                    но я познакомлю вас только с двумя основными! Это циклы <code class="code">for</code> и <code class="code">while</code>. 
+                    Для начала напомню вам основное понятие цикла. Цикл – это повторение определённого 
+                    действия определенное количество раз. Например, у нас есть массив данных, в котором 
+                    хранятся данные о возрасте пользователей. И нам нужно узнать, например, сколько 
+                    пользователей моложе 25 лет. Для этого нам и понадобится цикл!</p>
+                <div class="codezone">
+                    <div class="code__item">
+                        <p class="code__n">1</p>
+                        <p class="code__par"></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">2</p>
+                        <p class="code__par">
+                            <i class="let">let</i> 
+                            <i class="var">ages</i>
+                            <i class="equal">=</i>
+                            [<i class="num">34</i>,
+                            <i class="num">25</i>,
+                            <i class="num">67</i>,
+                            <i class="num">19</i>
+                            <i class="num">16</i>
+                            <i class="num">22</i>
+                            ]<i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">3</p>
+                        <p class="code__par">
+                            <i class="let">let</i> 
+                            <i class="var">result</i>
+                            <i class="equal">=</i>
+                            <i class="num">0</i><i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">4</p>
+                        <p class="code__par">
+                            <i class="let">for</i> (<i class="let">let</i>
+                                <i class="var">i</i>
+                                <i class="equal">=</i>
+                                <i class="num">0</i>;
+                                <i class="var">i</i>
+                                <i class="equal"><</i>
+                                <i class="var">ages<i class="comma">.</i>length</i>;
+                                <i class="var">i</i>
+                                <i class="equal">++</i>) {
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">5</p>
+                        <p class="code__par">
+                            <i class="let comm--m">if </i>(
+                                <i class="var">ages</i>[<i class="var">i</i>]
+                                <i class="equal"><</i> 
+                                <i class="num">25</i>
+                            ) {
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">6</p>
+                        <p class="code__par">
+                            <i class="var comm--d">result</i>
+                            <i class="equal">++</i>;
+                            <i class="comment comm--m">// заменяет result = result + 1;</i>
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">7</p>
+                        <p class="code__par comm--m">}</p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">8</p>
+                        <p class="code__par">}</p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">9</p>
+                        <p class="code__par"></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">10</p>
+                        <p class="code__par">
+                            <i class="equal">alert</i>(
+                                <i class="var">result</i>
+                            );
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">11</p>
+                        <p class="code__par"></p>
+                    </div>
+                </div>
+                <h1 class="main__title">Цикл for </h1>
+                <p class="main__par">Цикл for пишется через ключевое слово <code class="code">for</code>, как это не странно, 
+                    потом в <code class="code">( )</code> идут три аргумента. Первый аргумент это переменная с помощью которой будет 
+                    проводится счет, затем идет диапазон выполнения. Последний аргумент содержит действие 
+                    с переменной. В примере ниже выполняется сумма всех чисел от 1 до 100. </p>
+                <div class="codezone">
+                    <div class="code__item">
+                        <p class="code__n">1</p>
+                        <p class="code__par"></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">2</p>
+                        <p class="code__par">
+                            <i class="let">let</i> 
+                            <i class="var">result</i>
+                            <i class="equal">=</i>
+                            <i class="num">0</i><i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">3</p>
+                        <p class="code__par">
+                            <i class="let">for</i> (<i class="let">let</i>
+                                <i class="var">i</i>
+                                <i class="equal">=</i>
+                                <i class="num">1</i>;
+                                <i class="var">i</i>
+                                <i class="equal"><=</i>
+                                <i class="num">100</i>;
+                                <i class="var">i</i>
+                                <i class="equal">++</i>) {
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">4</p>
+                        <p class="code__par">
+                            <i class="var comm--m">result</i>
+                            <i class="equal">+=</i>
+                             <i class="var">i</i> ;
+                            <i class="comment comm--m">// заменяет result = result + i;</i>
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">5</p>
+                        <p class="code__par">}</p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">6</p>
+                        <p class="code__par"></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">7</p>
+                        <p class="code__par">
+                            <i class="equal">alert</i>(
+                                <i class="var">result</i>
+                            ); <i class="comment comm--m">// 5050</i>
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">8</p>
+                        <p class="code__par"></p>
+                    </div>
+                </div>
+                <h1 class="main__title">Цикл while</h1>
+                <p class="main__par">Ключевое слово <code class="code">while</code>, затем параметр выполнения, 
+                    и программа будет выполняться пока цикл не будет выдавать false. Теперь запишу 
+                    предыдущую задачу через циклы while</p>
+                <div class="codezone">
+                    <div class="code__item">
+                        <p class="code__n">1</p>
+                        <p class="code__par"></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">3</p>
+                        <p class="code__par">
+                            <i class="let">let</i> 
+                            <i class="var">result</i>
+                            <i class="equal">=</i>
+                            <i class="num">0</i>;</p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">3</p>
+                        <p class="code__par">
+                            <i class="let">let</i> 
+                            <i class="var">i</i>
+                            <i class="equal">=</i>
+                            <i class="num">1</i>;</p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">4</p>
+                        <p class="code__par">
+                            <i class="let">while</i> (
+                                <i class="var">i</i>
+                                <i class="equal"><=</i>
+                                <i class="num">100</i>
+                            ) {
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">6</p>
+                        <p class="code__par">
+                            <i class="var comm--m">result</i>
+                            <i class="equal">+=</i>
+                            <i class="var">i</i>;
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">9</p>
+                        <p class="code__par">
+                            <i class="var comm--m">i</i>
+                            <i class="equal">++</i>;
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">8</p>
+                        <p class="code__par">}</p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">9</p>
+                        <p class="code__par"></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">10</p>
+                        <p class="code__par">
+                            <i class="equal">alert</i>(
+                                <i class="var">result</i>
+                            ); <i class="comment comm--m">// 5050</i>
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">11</p>
+                        <p class="code__par"></p>
+                    </div>
+                </div>
+                <p class="main__par">Теперь пример задачи, где в массиве, если возвраст меньше 18, 
+                    то элемент заменяется на слово “denied”, если больше или 18 то на "granted"</p>
+                <div class="codezone">
+                    <div class="code__item">
+                        <p class="code__n">1</p>
+                        <p class="code__par"></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">2</p>
+                        <p class="code__par">
+                            <i class="let">let</i> 
+                            <i class="var">mass</i>
+                            <i class="equal">=</i>
+                            [<i class="num">14</i>,
+                            <i class="num">25</i>,
+                            <i class="num">18</i>,
+                            <i class="num">19</i>
+                            <i class="num">16</i>
+                            <i class="num">22</i>
+                            ]<i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">3</p>
+                        <p class="code__par">
+                            <i class="let">let</i> 
+                            <i class="var">result</i>
+                            <i class="equal">=</i>
+                            <i class="num">0</i><i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">4</p>
+                        <p class="code__par">
+                            <i class="let">for</i> (<i class="let">let</i>
+                                <i class="var">i</i>
+                                <i class="equal">=</i>
+                                <i class="num">0</i>;
+                                <i class="var">i</i>
+                                <i class="equal"><</i>
+                                <i class="var">mass<i class="comma">.</i>length</i>;
+                                <i class="var">i</i>
+                                <i class="equal">++</i>) {
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">5</p>
+                        <p class="code__par">
+                            <i class="let comm--m">if </i>(
+                                <i class="var">mass</i>[<i class="var">i</i>]
+                                <i class="equal"><</i> 
+                                <i class="num">18</i>
+                            ) {
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">6</p>
+                        <p class="code__par">
+                            <i class="var comm--d">mass</i>[<i class="var">i</i>]
+                            <i class="equal">=</i>
+                            <i class="str">'denied'</i>;
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">7</p>
+                        <p class="code__par comm--m">} <i class="let">else</i> {</p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">8</p>
+                        <p class="code__par">
+                            <i class="var comm--d">mass</i>[<i class="var">i</i>]
+                            <i class="equal">=</i>
+                            <i class="str">'granted'</i>;
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">8</p>
+                        <p class="code__par comm--m">}</p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">8</p>
+                        <p class="code__par">}</p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">9</p>
+                        <p class="code__par"></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">10</p>
+                        <p class="code__par">
+                            <i class="equal">alert</i>(<i class="var">mass</i>);
+                                <i class="comment comm--m">// ['denied', 'granted', 'granted', 'granted', 'denied', 'granted' ];</i>
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">11</p>
+                        <p class="code__par"></p>
+                    </div>
+                </div>
+                <div class="task__wrapper">
+                    <h1 class="task__title">Задачи:</h1>
+                    <article class="tasks">
+                        <div class="task__item">
+                            <h2 class="task__name">Задача #1</h2>
+                            <p class="task__desc">Посчитайте сколько мужчин в массиве(сделайте это с помощью цикла, 
+                                так как реально пользователей бывает десятки тысяч) </p>
+                            <div class="codezone">
+                                <div class="code__item">
+                                    <p class="code__n">1</p>
+                                    <p class="code__par"></p>
+                                </div>
+                                <div class="code__item">
+                                    <p class="code__n">2</p>
+                                    <p class="code__par">
+                                        <i class="let">let</i> 
+                                        <i class="var">people</i>
+                                        <i class="equal">=</i>
+                                        [<i class="num">'m'</i>,
+                                        <i class="num">'f'</i>,
+                                        <i class="num">'f'</i>,
+                                        <i class="num">'f'</i>,
+                                        <i class="num">'m'</i>,
+                                        <i class="num">'f'</i>
+                                        ]<i class="comma">;</i></p>
+                                </div>
+                                <div class="code__item">
+                                    <p class="code__n">3</p>
+                                    <p class="code__par"></p>
+                                </div>
+                            </div>
+                            <a href="https://embed.plnkr.co/plunk/gnfK1Gz9FkQcmZmK" class="task__link">Решение</a>
+                        </div>
+                    </article>
+                </div>

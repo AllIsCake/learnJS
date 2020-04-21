@@ -1,0 +1,192 @@
+﻿                <h1 class="main__title">Типы данных</h1>
+                <p class="main__par">В JavaScript существует 8 типов данных: number,
+                    bigint, string, Boolean, null, undefined, object, symbol. Но мы рассмотри
+                    только 5, так как для ознакомительного урока, этого достаточно.</p>
+                <h1 class="main__title">Number(числа)</h1>
+                <p class="main__par">Этот тип данных представляет собой все числа, в том числе и дробные.</p>
+                <div class="codezone">
+                    <div class="code__item">
+                        <p class="code__n">1</p>
+                        <p class="code__par"></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">2</p>
+                        <p class="code__par">
+                            <i class="let">let</i> 
+                            <i class="var">a</i>
+                            <i class="equal">=</i>
+                            <i class="num">394</i> 
+                            <i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">3</p>
+                        <p class="code__par">
+                            <i class="let">let</i> 
+                            <i class="var">b</i>
+                            <i class="equal">=</i>
+                            <i class="num">74.334455</i> 
+                            <i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">4</p>
+                        <p class="code__par"></p>
+                    </div>
+                </div>
+                <p class="main__par">Вы можете попробовать в песочнице (так называют простой редактор кода)
+                    разделить любое число на 0. Результат может вас немного удивить. </p>
+                <p class="main__par">Если вы будете делить, умножать и т.д. на другой
+                    тип данных, то компилятор выдаст вам ошибку:</p>
+                    <div class="codezone">
+                        <div class="code__item">
+                            <p class="code__n">1</p>
+                            <p class="code__par"></p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">2</p>
+                            <p class="code__par">
+                                <i class="num">console</i><i class="comma">.</i><i class="equal">log</i>
+                                <i class="comma">(<i class="num">23</i>
+                                    <i class="equal">/</i>
+                                    <i class="str">'hello'</i>
+                                )</i> 
+                                <i class="comma">;</i>
+                                <i class="comment">//error</i></p>  
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">3</p>
+                            <p class="code__par"></p>
+                        </div>
+                    </div>
+                <h1 class="main__title">String(строки)</h1>
+                <p class="main__par">В JS можно записывать строку как в <code class="code">“ ”</code>  
+                    так и в <code class="code">' '</code> кавычках. Это ни на
+                    что не влияет. Так же вы можете использовать специальное сочетания <code class="code">\n</code>. Оно позволяет
+                    перенести строку:</p>
+                    <div class="codezone">
+                        <div class="code__item">
+                            <p class="code__n">1</p>
+                            <p class="code__par"></p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">2</p>
+                            <p class="code__par">
+                                <i class="num">console</i><i class="comma">.</i><i class="equal">log</i>
+                                <i class="comma">(
+                                    <i class="str">'Hello'</i>
+                                )</i> 
+                                <i class="comma">;</i>
+                                <i class="comment">//error</i></p>  
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">2</p>
+                            <p class="code__par">
+                                <i class="num">console</i><i class="comma">.</i><i class="equal">log</i>
+                                <i class="comma">(
+                                    <i class="str">"My name's JavaScript"</i>
+                                )</i> 
+                                <i class="comma">;</i></p>  
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">3</p>
+                            <p class="code__par"></p>
+                        </div>
+                    </div>    
+                <h1 class="main__title">Boolean(логический)</h1>
+                <p class="main__par">Этот тип представляет из себя правду или не правду, истину или ложь.
+                    1 или 0.</p>
+                    <div class="codezone">
+                        <div class="code__item">
+                            <p class="code__n">1</p>
+                            <p class="code__par"></p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">2</p>
+                            <p class="code__par">
+                                <i class="let">let</i> 
+                                <i class="var">a</i>
+                                <i class="equal">=</i>
+                                <i class="num">true</i> 
+                                <i class="comma">;</i></p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">3</p>
+                            <p class="code__par">
+                                <i class="let">let</i> 
+                                <i class="var">b</i>
+                                <i class="equal">=</i>
+                                <i class="num">false</i> 
+                                <i class="comma">;</i></p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">4</p>
+                            <p class="code__par"></p>
+                        </div>
+                    </div>
+                <p class="main__par">Это значение может быть результатом сравнения. Советую это запомнить,
+                    так как это играет очень большую роль в условных операторах.</p>
+                <h1 class="main__title">Undefined(неопределенный)</h1>
+                <p class="main__par">Этот тип присваивается переменной, когда она была определена,
+                    но не назначена:</p>
+                    <div class="codezone">
+                        <div class="code__item">
+                            <p class="code__n">1</p>
+                            <p class="code__par"></p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">2</p>
+                            <p class="code__par">
+                                <i class="let">let</i> 
+                                <i class="var">a</i>
+                                <i class="comma">;</i></p>
+                            </p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">3</p>
+                            <p class="code__par">
+                                <i class="num">console</i><i class="comma">.</i><i class="equal">log</i>
+                                <i class="comma">(
+                                    <i class="var">a</i>
+                                )</i> 
+                                <i class="comma">;</i>
+                                <i class="comment">//undefined</i></p>  
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">4</p>
+                            <p class="code__par"></p>
+                        </div>
+                    </div>
+                <h1 class="main__title">Null(пустое)</h1>
+                <p class="main__par">Это значение присваивается, когда переменной нужно задать пустое
+                    значение, которое не занимает памяти. Так же это значение является нулевым указателем.
+                    То есть если вы пытаетесь сослаться на какой-либо объект, а он выдает вам null, то его не
+                    существует. </p>
+                    <div class="codezone">
+                        <div class="code__item">
+                            <p class="code__n">1</p>
+                            <p class="code__par"></p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">2</p>
+                            <p class="code__par">
+                                <i class="let">let</i> 
+                                <i class="var">a</i>
+                                <i class="equal">=</i>
+                                <i class="num">null</i>
+                                <i class="comma">;</i></p>
+                            </p>
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">3</p>
+                            <p class="code__par">
+                                <i class="num">console</i><i class="comma">.</i><i class="equal">log</i>
+                                <i class="comma">(
+                                    <i class="var">a</i>
+                                )</i> 
+                                <i class="comma">;</i>
+                                <i class="comment">//null</i></p>  
+                        </div>
+                        <div class="code__item">
+                            <p class="code__n">4</p>
+                            <p class="code__par"></p>
+                        </div>
+                    </div>

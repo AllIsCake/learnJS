@@ -1,0 +1,268 @@
+﻿               <h1 class="main__title">Массив</h1>
+                <p class="main__par">Массив - это тоже переменная, только она хранит 
+                    в себе совокупность данных. То есть если обычная переменная это определённая 
+                    ячейка(ящик) в памяти, то массив это целый шкаф с множеством ящиков, все элементы 
+                    массивы записываются через <code class="code">[ ]</code>. В массиве может хранится любой тип данных и другие 
+                    массивы. Массивы в массивах называют двухмерными массивам.</p>
+                <div class="codezone">
+                    <div class="code__item">
+                        <p class="code__n">1</p>
+                        <p class="code__par"></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">2</p>
+                        <p class="code__par">
+                            <i class="let">let</i> 
+                            <i class="var">ages</i>
+                            <i class="equal">=</i>
+                            [<i class="num">34</i>,
+                            <i class="num">25</i>,
+                            <i class="num">67</i>,
+                            <i class="num">19</i>
+                            ]<i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">2</p>
+                        <p class="code__par">
+                            <i class="let">let</i> 
+                            <i class="var">names</i>
+                            <i class="equal">=</i>
+                            [<i class="str">'Kelly'</i>,
+                            <i class="str">'Ann'</i>,
+                            <i class="str">'Denis'</i>,
+                            <i class="str">'Jhon'</i>
+                            ]<i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">4</p>
+                        <p class="code__par"></p>
+                    </div>
+                </div>
+                <p class="main__par">Мы можем обратится к любому элементу массива 
+                    (что применяется часто в циклах) и что-то с ним сделать. Мы можем это сделать 
+                    с помощью указания его номера в <code class="code">[{ваще число}]</code>. В программировании отчет начинается с нуля, 
+                    поэтому первый элемент массива будет под номером 0.</p>
+                <div class="codezone">
+                    <div class="code__item">
+                        <p class="code__n">1</p>
+                        <p class="code__par"></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">2</p>
+                        <p class="code__par">
+                            <i class="let">let</i> 
+                            <i class="var">arr</i>
+                            <i class="equal">=</i>
+                            [<i class="str">'Meadow'</i>,
+                            <i class="num">25</i>,
+                            <i class="str">'paint'</i>,
+                            <i class="num">69</i>
+                            ]<i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">3</p>
+                        <p class="code__par">
+                            <i class="equal">alert</i>(
+                            <i class="var">arr</i>[<i class="num">0</i>]
+                            )<i class="comma">;</i>
+                            <i class="comment comm--m">// 'Meadow'</i>
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">4</p>
+                        <p class="code__par"></p>
+                    </div>
+                </div>
+                <p class="main__par">Мы можем его заменить:</p>
+                <div class="codezone">
+                    <div class="code__item">
+                        <p class="code__n">1</p>
+                        <p class="code__par"></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">2</p>
+                        <p class="code__par">
+                            <i class="let">let</i> 
+                            <i class="var">arr</i>
+                            <i class="equal">=</i>
+                            [<i class="str">'Meadow'</i>,
+                            <i class="num">25</i>,
+                            <i class="str">'paint'</i>,
+                            <i class="num">69</i>
+                            ]<i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">3</p>
+                        <p class="code__par">
+                            <i class="var">arr</i>[<i class="num">0</i>]
+                            <i class="equal">=</i>
+                            <i class="num">24</i>
+                            <i class="comma">;</i>
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">4</p>
+                        <p class="code__par">
+                            <i class="equal">alert</i>(
+                            <i class="var">arr</i> )<i class="comma">;</i>
+                            <i class="comment comm--m">// [24, 25, 'paint', 69 ]</i>
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">5</p>
+                        <p class="code__par"></p>
+                    </div>
+                </div>
+                <p class="main__par">Теперь новый элемент стоит на месте старого. </p>
+                <p class="main__par">Или добавить новый элемент:</p>
+                <div class="codezone">
+                    <div class="code__item">
+                        <p class="code__n">1</p>
+                        <p class="code__par"></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">2</p>
+                        <p class="code__par">
+                            <i class="let">let</i> 
+                            <i class="var">arr</i>
+                            <i class="equal">=</i>
+                            [<i class="str">'Meadow'</i>,
+                            <i class="num">25</i>,
+                            <i class="str">'paint'</i>,
+                            <i class="num">69</i>
+                            ]<i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">3</p>
+                        <p class="code__par">
+                            <i class="var">arr</i>[<i class="num">4</i>]
+                            <i class="equal">=</i>
+                            <i class="str">'smth'</i>
+                            <i class="comma">;</i>
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">4</p>
+                        <p class="code__par">
+                            <i class="equal">alert</i>(
+                            <i class="var">arr</i> )<i class="comma">;</i>
+                            <i class="comment comm--m">// ['Meadow', 25, 'paint', 69, 'smth']</i>
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">5</p>
+                        <p class="code__par"></p>
+                    </div>
+                </div>
+                <p class="main__par">Для этого существует специальный метод <code class="code">push()</code>, который добавляет новый элемент в конец:</p>
+                <div class="codezone">
+                    <div class="code__item">
+                        <p class="code__n">1</p>
+                        <p class="code__par"></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">2</p>
+                        <p class="code__par">
+                            <i class="let">let</i> 
+                            <i class="var">arr</i>
+                            <i class="equal">=</i>
+                            [<i class="str">'Meadow'</i>,
+                            <i class="num">25</i>,
+                            <i class="str">'paint'</i>,
+                            <i class="num">69</i>
+                            ]<i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">3</p>
+                        <p class="code__par">
+                            <i class="var">arr</i>.
+                            <i class="equal">push</i>(
+                            <i class="num">'smth'</i>
+                            )<i class="comma">;</i>
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">4</p>
+                        <p class="code__par">
+                            <i class="equal">alert</i>(
+                            <i class="var">arr</i> )<i class="comma">;</i>
+                            <i class="comment comm--m">// ['Meadow', 25, 'paint', 69, 'smth']</i>
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">5</p>
+                        <p class="code__par"></p>
+                    </div>
+                </div>
+                <p class="main__par">И аналогичный метод <code class="code">pop()</code> , удаляющий последний элемент из массива. 
+                    Существует огромное множество других методов, но это самые основные, которые могут 
+                    вам понадобится.</p>
+                <div class="codezone">
+                    <div class="code__item">
+                        <p class="code__n">1</p>
+                        <p class="code__par"></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">2</p>
+                        <p class="code__par">
+                            <i class="let">let</i> 
+                            <i class="var">arr</i>
+                            <i class="equal">=</i>
+                            [<i class="str">'Meadow'</i>,
+                            <i class="num">25</i>,
+                            <i class="str">'paint'</i>,
+                            <i class="num">69</i>
+                            ]<i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">3</p>
+                        <p class="code__par">
+                            <i class="var">arr</i>.
+                            <i class="equal">pop</i>()<i class="comma">;</i>
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">4</p>
+                        <p class="code__par">
+                            <i class="equal">alert</i>(
+                            <i class="var">arr</i> )<i class="comma">;</i>
+                            <i class="comment comm--m">// ['Meadow', 25, 'paint']</i>
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">5</p>
+                        <p class="code__par"></p>
+                    </div>
+                </div>
+                <p class="main__par">И так же последнее, что вам понадобится это узнать 
+                    количество элементов в массиве. Делается это с помощью метода <code class="code">array.length</code>.</p>
+                <div class="codezone">
+                    <div class="code__item">
+                        <p class="code__n">1</p>
+                        <p class="code__par"></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">2</p>
+                        <p class="code__par">
+                            <i class="let">let</i> 
+                            <i class="var">arr</i>
+                            <i class="equal">=</i>
+                            [<i class="str">'Meadow'</i>,
+                            <i class="num">25</i>,
+                            <i class="str">'paint'</i>,
+                            <i class="num">69</i>
+                            ]<i class="comma">;</i></p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">4</p>
+                        <p class="code__par">
+                            <i class="equal">alert</i>(
+                            <i class="var">arr</i>.<i class="var">length</i> )<i class="comma">;</i>
+                            <i class="comment comm--m">// 4</i>
+                        </p>
+                    </div>
+                    <div class="code__item">
+                        <p class="code__n">5</p>
+                        <p class="code__par"></p>
+                    </div>
+                </div>

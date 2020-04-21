@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn</title>
+    <!--my css-->
+    <link rel="stylesheet" href="css/book.css">
+
+</head>
+
+<body>
+    <main class="main">
+        <div class="burger__wrapper">
+            <div class="burger"></div>
+        </div>
+        <div class="map__ghost"></div>
+        <aside class="map">
+            <div class="map__nav">
+                <h1 class="map__title">Карта обучения</h1>
+                <section class="menu">
+                    <div class="menu__item">
+                        <h2 class="menu__title">Для начала</h2>
+                        <ul class="menu__links">
+                            <li><a href="#intro" class="menu__links-item  game__btn"
+                                    contentData="https://raw.githubusercontent.com/AllIsCake/Learn-JavaScript-/master/flies/forBegining/intro.txt">
+                                    Введение</a></li>
+                            <li><a href="#edior" class="menu__links-item"
+                                    contentData="https://raw.githubusercontent.com/AllIsCake/Learn-JavaScript-/master/flies/editor/editor.txt">
+                                    Редактор кода</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu__item">
+                        <h2 class="menu__title">Основы JS</h2>
+                        <ul class="menu__links">
+                            <li><a href="#variable" class="menu__links-item  game__btn"
+                                    contentData="https://raw.githubusercontent.com/AllIsCake/Learn-JavaScript-/master/flies/variables/variable.txt"
+                                    scriptLink="../flies/variables/variable.js">
+                                    Переменные</a></li>
+                            <li><a href="#data" class="menu__links-item" 
+                                contentData="https://raw.githubusercontent.com/AllIsCake/Learn-JavaScript-/master/flies/data/data.txt"
+                                scriptLink="../flies/data/data.js">
+                                Типы данных</a></li>
+                            <li><a href="#conditions" class="menu__links-item" 
+                                contentData="https://raw.githubusercontent.com/AllIsCake/Learn-JavaScript-/master/flies/conditions/conditions.txt">
+                                Условные операторы</a>
+                            <li><a href="#arrays" class="menu__links-item"
+                                    contentData="https://raw.githubusercontent.com/AllIsCake/Learn-JavaScript-/master/flies/editor/editor.txt">
+                                Массивы</a></li>
+                            </li>
+                            <li><a href="#loops" class="menu__links-item"
+                                contentData="https://raw.githubusercontent.com/AllIsCake/Learn-JavaScript-/master/flies/editor/editor.txt">
+                            Циклы</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </aside>
+        <div class="main__wrapper">
+            <section class="main__content">
+               
+            </section>
+            <div class="game">
+                <p>Введите число: </p>
+                <div class="game__main">
+                    <input type="text" class="guessField">
+                    <input type="submit" value="проверить" class="guessSubmit">
+                    <input type="submit" value="заново" class="reset" style="display: none;">
+                </div>
+                <p>Предыдущие значения: <strong class="lastResult"></strong></p>
+                <p class="guess"></p>
+                <p class="lowOrHi"></p>
+            </div>
+        </div>
+    </main>
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!--my JS-->
+    <script src="js/dist/book.js"></script>
+    <!--lazy load-->
+    <script src="js/dist/lazy.js"></script>
+    <!--game-->
+    <script src="js/dist/game.js"></script>
+</body>
+
+</html>

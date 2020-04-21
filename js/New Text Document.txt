@@ -1,0 +1,21 @@
+let request = (url) => {
+    if (url === 'https://raw.githubusercontent.com/AllIsCake/Learn-JavaScript-/master/flies/forBegining/intro.txt') {
+        gameBlock.style.display = 'block'
+    } else {
+        gameBlock.style.display = 'none'
+    }
+    document.querySelector('.main__content').innerHTML = `<div class="loading_circle"></div>`;
+    fetch(url).then(function(data) {
+        return data.text();
+    })
+    .then((data) => {
+        document.querySelector('.main__content').innerHTML = data;
+    })
+    .catch((error) => {
+        console.log(error);
+        document.querySelector('.main__content').innerHTML = `
+        <h1 class="main__error">error</h1>
+        <img src="https://www.meme-arsenal.com/memes/49dd6e7eb126d91b0f3b46d0891ac63c.jpg" alt="" style="width: 0px; display: block; margin: 0 auto;">`;
+    });
+    lazyLoad();
+} 
