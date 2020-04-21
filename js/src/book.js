@@ -19,7 +19,7 @@ $(document).ready(function() {
 let gameBlock = document.querySelector('.game');
 //fetching files
 let request = (url) => {
-    if (url === 'https://raw.githubusercontent.com/AllIsCake/Learn-JavaScript-/master/flies/forBegining/intro.txt') {
+    if (url === 'https://raw.githubusercontent.com/AllIsCake/learnJS/master/flies/forBegining/intro.txt') {
         gameBlock.style.display = 'block'
     } else {
         gameBlock.style.display = 'none'
