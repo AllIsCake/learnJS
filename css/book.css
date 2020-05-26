@@ -216,7 +216,7 @@ input {
 
 @media (max-width: 1199.98px) {
   .main__wrapper {
-    width: 95%;
+    width: 100%;
   }
   .main__wrapper.active {
     width: 95%;
@@ -625,7 +625,7 @@ input {
 .game {
   width: 100%;
   max-width: 1090px;
-  margin: 15px 0 65px 0;
+  margin: 15px 0 15px 0;
   color: #F2F1E8;
   font-size: 18px;
 }
