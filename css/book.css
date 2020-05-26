@@ -414,7 +414,7 @@ input {
   white-space: nowrap;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 768px) {
   .codezone {
     font-size: 14px;
     overflow-x: scroll;
@@ -548,6 +548,7 @@ input {
 @media (max-width: 991.98px) {
   .tasks .task__item {
     width: 100%;
+    margin: 0;
   }
 }
 
@@ -589,6 +590,35 @@ input {
     font-size: 14px;
     width: 125px;
     height: 35px;
+  }
+}
+
+.footer {
+  background: #F2F1E8;
+  margin: 15px 0;
+  padding: 15px 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 575.98px) {
+  .footer {
+    font-size: 12px;
+  }
+}
+
+.author {
+  font-size: 16px;
+  color: #D7A449;
+  margin-bottom: 7px;
+}
+
+.author span {
+  color: #E34234;
+}
+
+@media (max-width: 575.98px) {
+  .author {
+    font-size: 14px;
   }
 }
 

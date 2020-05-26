@@ -309,7 +309,7 @@ input {
     background-color: $white;
     font-size: 16px;
     white-space: nowrap;
-    @media (max-width: 575.98px) {
+    @media (max-width: 768px) {
         font-size: 14px;
         overflow-x: scroll;
     }
@@ -399,6 +399,7 @@ input {
         margin: 10px;
         @media (max-width: 991.98px) {
             width: 100%;
+            margin: 0;
         }
     }
     .task__name {
@@ -427,6 +428,27 @@ input {
             font-size: 14px;
             width: 125px; height: 35px;
         }
+    }
+}
+//footer
+.footer {
+    background: $white;
+    margin: 15px 0;
+    padding: 15px 10px;
+    font-size: 14px;
+    @media (max-width: 575.98px) {
+            font-size: 12px;
+    }
+}
+.author {
+    font-size: 16px;
+    color: $orange;
+    margin-bottom: 7px;
+    span {
+        color: $red;
+    }
+    @media (max-width: 575.98px) {
+        font-size: 14px;
     }
 }
 //game
